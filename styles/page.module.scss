@@ -1,0 +1,398 @@
+@import 'variables';
+
+.container {
+    @include containerize($padding: 1rem);
+}
+
+.hero {
+    height: calc(100vh - #{$navbarHeight} - 4rem);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ 
+    .heroTitle {
+        align-self: center;
+
+        p {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -7px;
+            margin-bottom: -30px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 9rem;
+            font-weight: 700;
+            letter-spacing: -7px;
+            margin-bottom: -50px;
+            text-transform: uppercase;
+        }
+    }
+
+    .heroShortDescription {
+        align-self: self-end;
+        justify-self: self-end;
+
+        p {
+            width: 23rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+
+            &:first-child {
+                text-align: right;
+            }
+        }
+    }
+}
+
+.streamer {
+    height: 4rem;
+
+    p {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: -1px;
+        margin-bottom: 1rem;
+    }
+}
+
+.partTwoContainer {
+    background-color: $bgColor;
+    color: #FFF;
+    padding-top: 8rem;
+
+    .heroPresentation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        padding-bottom: 4rem;
+
+        .meDescription {
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 4rem;
+    
+                .namePronounceSize {
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                }
+    
+                .namePronounceColor {
+                    color: $primaryColor;
+                    font-style: italic;
+                }
+            }
+    
+            p {
+                width: 34rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .someInformationLoop {
+        @include containerize($padding: 4rem);
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+
+        & > div {
+            gap: 5rem;
+
+            & > p {
+                font-weight: 700;
+                font-size: clamp(20px, 12.9577464789px + 1.4084507042vw, 40px);
+                white-space: nowrap;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+            }
+        }
+    }
+
+    .essentialHardSkills {
+        width: 40%;
+        padding-bottom: 8rem;
+
+        h1 {
+            text-align: center;
+        }
+
+        & > div {
+            padding-bottom: .8rem;
+        }
+    }
+}
+
+.partThreeContainer {
+    background-color: #DDD;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15rem 0;
+
+    .largeCard {
+        padding: 2rem;
+        background-color: #FFF;
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 30rem;
+        width: 25rem;
+        text-align: center;
+
+        .largeCardHeader {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 1.5rem;
+            padding-bottom: 1rem;
+            width: 100%;
+
+            .largeCardSvgCircle {
+                background-color: $contrastPrimaryColor;
+                border-radius: 5rem;
+                padding: .7rem;
+            }
+        }
+
+        h2 {
+            padding-top: 2rem;
+            padding-bottom: .5rem;
+            color: $contrastPrimaryColor;
+        }
+
+        ul {
+            text-align: left;
+        }
+    }
+}
+
+.partFourContainer {
+    padding: 15rem 4rem;
+    background-color: $bgColor;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+    color: #FFF;
+
+    .shayniteScreen {
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 14px;
+        }
+    }
+
+    .shayniteDescription {
+        align-self: center;
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}
+
+.partFiveContainer {
+    padding-top: 10rem;
+    @include containerize($padding: 1rem);
+
+    .table {
+        width: 40%;
+        padding-bottom: 10rem;
+
+        & > div {
+            border-bottom: 2px solid $bgColor;
+            padding: .5rem;
+
+            & > a {
+                font-size: 1.5rem;
+                font-weight: 400;
+                letter-spacing: -1px;
+                text-transform: uppercase;
+            }
+        }
+
+        & > div:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.footer {
+    @include containerize($padding: 1rem);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+
+    ul {
+        display: flex;
+        gap: 1rem;
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+/** media screen 1200px */
+@media screen and (max-width: 1200px) {
+    .heroTitle {
+        h1 {
+            font-size: 8rem!important;
+        }
+    }
+                
+    .heroPresentation {
+        margin: 4rem;
+    }
+
+    .largeCard {
+        width: 20rem!important;
+        height: 35rem!important;
+        
+        .largeCardHeader {
+            flex-direction: column;
+        }
+    }
+
+    .shayniteDescription {
+        font-size: 1rem!important;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .heroTitle {
+        h1 {
+            font-size: 7rem!important;
+        }
+    }
+
+    .heroPresentation > div > div > svg {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .hero {
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5rem;
+
+        .heroTitle {
+            p {
+                margin-bottom: -20px;
+            }
+
+            h1 {
+                font-size: 4rem!important;
+                margin-bottom: -25px;
+            }
+
+            h1:last-child {
+                margin-bottom: unset;
+            }
+        }
+
+        .heroShortDescription {
+            align-self: unset;
+
+            p {
+                width: unset;
+
+                &:first-child {
+                    text-align: unset;
+                }
+            }
+        }
+    }
+
+    .heroPresentation {
+        display: flex!important;
+        flex-direction: column;
+    }
+
+    .essentialHardSkills {
+        width: 80%!important;
+    }
+
+    .partThreeContainer {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .partFourContainer {
+        display: flex!important;
+        flex-direction: column;
+    }
+
+    .table {
+        width: 80%!important;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        font-size: 1rem;
+
+        ul {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .heroShortDescription {
+        p {
+            font-size: 1.2rem!important;
+        }
+    }
+
+    .heroPresentation {
+        margin: 2rem;
+
+        .meDescription {
+            h1 {
+                text-align: center;
+            }
+
+            p {
+                width: unset!important;
+            }
+        }
+    }
+
+    .someInformationLoop {
+        & > div {
+            gap: 2rem;
+        }
+    }
+
+    .essentialHardSkills {
+        width: 100%!important;
+    }
+
+    .partFourContainer {
+        .shayniteScreen {
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 14px;
+            }
+        }
+    }
+
+    .partFiveContainer {
+        .table {
+            width: 100%!important;
+        }
+    }
+}

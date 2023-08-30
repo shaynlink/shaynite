@@ -1,0 +1,26 @@
+@import '../variables';
+
+.container {
+    width: 100%;
+    
+    .text {
+        padding-left: 1.2rem;
+    }
+
+    .bar {
+        height: .95rem;
+        width: 100%;
+        background-color: #fff;
+        border-top-right-radius: 11px;
+        border-bottom-right-radius: 11px;
+
+        .progress {
+            height: 100%;
+            width: 0%;
+            background-color: $primaryColor;
+            transition: width .5s ease-in-out;
+            border-top-right-radius: 11px;
+            border-bottom-right-radius: 11px;
+        }
+    }
+}

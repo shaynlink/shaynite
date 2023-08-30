@@ -1,0 +1,10 @@
+$navbarHeight: 4rem;
+$bgColor: var(--background-color);
+$primaryColor: var(--primary-color);
+$contrastPrimaryColor: var(--contrast-primary-color);
+
+@mixin containerize($width: 100%, $padding: 1rem) {
+    width: $width;
+    padding-left: $padding;
+    padding-right: $padding;
+}
