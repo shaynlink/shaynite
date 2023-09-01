@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react';
 import useColoration from '@/hooks/useColoration';
 import SecondOrderSystem from '@/lib/SecondOrderSystem';
-import styles from '@/styles/components/CursorAnimation.module.scss';
+import styles from '@/styles/components/animations/CursorAnimation.module.scss';
 
 const PRIMARY_FREQUENCY = 1.6;
 const PRIMARY_DUMPING_FACTOR = .7;

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import useIntersectionObserver from '@/hooks/useIntersectionObserver';
 import styles from '@/styles/components/SkillBar.module.scss';
 
 interface SkillBarProps {
@@ -10,14 +11,17 @@ interface SkillBarProps {
 
 export default function SkillBar({ text, percent }: SkillBarProps) {
     const progessRef = useRef<HTMLDivElement>(null);
+    const isIntersecting = useIntersectionObserver(progessRef, { threshold: 0.5 });
 
     useEffect(() => {
-        setTimeout(() => {
-            if (progessRef.current) {
-                progessRef.current.style.width = `${percent}%`;
-            }
-        }, 500);
-    });
+        if (isIntersecting) {
+            setTimeout(() => {
+                if (progessRef.current) {
+                    progessRef.current.style.width = `${percent}%`;
+                }
+            }, 500);
+        }
+    }, [isIntersecting, percent]);
     
     return (
         <div className={styles.container}>

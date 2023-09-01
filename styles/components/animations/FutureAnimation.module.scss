@@ -1,0 +1,15 @@
+.containerFuture {
+    position: relative;
+
+    .pAnime1 {
+        position: absolute;
+        transition: transform .2s ease-out;
+        color: rgba(0, 0, 0, .4);
+    }
+
+    .pAnime2 {
+        position: absolute;
+        transition: transform .2s ease-out;
+        color: rgba(0, 0, 0, .2);
+    }
+}

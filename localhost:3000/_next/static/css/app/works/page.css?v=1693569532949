@@ -1,0 +1,168 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./styles/works.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.works_main__O_2Bf {
+  background-color: var(--background-color);
+  width: 100%;
+  color: #FFF;
+  padding-top: 10rem;
+}
+.works_main__O_2Bf h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+.works_main__O_2Bf .works_activeWebsites__QAp9L {
+  width: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  padding-top: 10rem;
+  grid-gap: 1rem;
+  gap: 1rem;
+  grid-row-gap: 5rem;
+  row-gap: 5rem;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+.works_main__O_2Bf .works_activeWebsites__QAp9L img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 14px;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+.works_main__O_2Bf .works_activeWebsites__QAp9L img:hover {
+  transform: scale(1.1);
+}
+.works_main__O_2Bf .works_activeWebsites__QAp9L > div:last-child {
+  grid-column: 2/3;
+}
+.works_main__O_2Bf .works_studiesProjects__d3NVi {
+  width: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 15rem;
+}
+.works_main__O_2Bf .works_studiesProjects__d3NVi .works_project__VUGOq {
+  padding-bottom: 20rem;
+}
+.works_main__O_2Bf .works_studiesProjects__d3NVi .works_project__VUGOq h2 {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.works_main__O_2Bf .works_studiesProjects__d3NVi .works_project__VUGOq .works_projectContainer__P8az3 {
+  display: grid;
+  grid-gap: 5rem;
+  gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+}
+.works_main__O_2Bf .works_studiesProjects__d3NVi .works_project__VUGOq .works_projectContainer__P8az3 .works_projectScreen__oU2Of img {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  margin-bottom: 0.5rem;
+}
+.works_main__O_2Bf .works_studiesProjects__d3NVi .works_project__VUGOq .works_projectContainer__P8az3 .works_projectScreen__oU2Of .works_button__1H789 {
+  padding: 0.8rem 2rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #FFF;
+  color: #000;
+}
+.works_main__O_2Bf .works_studiesProjects__d3NVi .works_project__VUGOq .works_projectContainer__P8az3 .works_projectDescription__XPBCi {
+  align-self: center;
+}
+.works_main__O_2Bf .works_studiesProjects__d3NVi .works_project__VUGOq .works_projectContainer__P8az3 .works_projectDescription__XPBCi h3 {
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+.works_main__O_2Bf .works_studiesProjects__d3NVi .works_project__VUGOq .works_projectContainer__P8az3 .works_projectDescription__XPBCi ul {
+  font-size: 1vw;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  list-style: ethiopic-halehame;
+}
+.works_main__O_2Bf .works_pinnedProjects__QtIzY {
+  width: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  padding-top: 10rem;
+  grid-gap: 1rem;
+  gap: 1rem;
+  grid-row-gap: 5rem;
+  row-gap: 5rem;
+  padding-bottom: 20rem;
+}
+.works_main__O_2Bf .works_pinnedProjects__QtIzY .works_pinnedProject__ZnlXB img {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+.works_main__O_2Bf .works_pinnedProjects__QtIzY .works_pinnedProject__ZnlXB img:hover {
+  transform: scale(1.1);
+}
+.works_main__O_2Bf .works_footer__jHWMh {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+.works_main__O_2Bf .works_footer__jHWMh ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.works_main__O_2Bf .works_footer__jHWMh ul li {
+  list-style: none;
+}
+
+@media screen and (max-width: 720px) {
+  .works_main__O_2Bf .works_activeWebsites__QAp9L {
+    display: flex;
+    flex-direction: column;
+  }
+  .works_main__O_2Bf .works_studiesProjects__d3NVi .works_project__VUGOq .works_projectContainer__P8az3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5rem;
+  }
+  .works_main__O_2Bf .works_pinnedProjects__QtIzY {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    row-gap: 5rem;
+    padding-bottom: 20rem;
+  }
+  .works_main__O_2Bf .works_footer__jHWMh {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .works_main__O_2Bf .works_footer__jHWMh ul {
+    justify-content: space-around;
+  }
+}

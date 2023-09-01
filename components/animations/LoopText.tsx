@@ -1,6 +1,6 @@
 'use client';
 import { useRef, useEffect } from 'react';
-import styles from '@/styles/components/LoopText.module.scss';
+import styles from '@/styles/components/animations/LoopText.module.scss';
 
 interface LetterSpacingProps {
     text: string;
@@ -47,11 +47,11 @@ export default function LoopText({ text, repeat }: LetterSpacingProps) {
                 loopText.style.transform = `translate(-${loopTranslate.current}%, 0%) translate3d(0px, 0px, 0px)`;
             }
 
-            new Promise((res) => setTimeout(() => res(animate()), 10));
+            requestAnimationFrame(animate);
         }
 
         if (process.current) return;
-        animate();
+        requestAnimationFrame(animate);
         process.current = true;
     }, [loopRef]);
 

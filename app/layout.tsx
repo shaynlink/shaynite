@@ -1,7 +1,7 @@
 import { Merriweather_Sans } from 'next/font/google';
 import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
-import CursorAnimation from '@/components/CursorAnimation';
+import CursorAnimation from '@/components/animations/CursorAnimation';
 
 import '@/styles/globals.scss';
 
