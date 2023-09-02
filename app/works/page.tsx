@@ -140,6 +140,7 @@ export default function Work() {
                             <p>For this project, I had to create a Back-End with NodeJS to manipulate data with MongoDB</p>
                             <h3>Difficulty encounter</h3>
                             <p>use ODM with mongoose to manage data with mongoDB</p>
+                            <p>setup complexe middleware with multer for manipulate image</p>
                             <h3>Skills owned</h3>
                             <ul>
                                 <li>Implement a logical data model in accordance with regulations</li>
