@@ -1,0 +1,105 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./app/[application_id]/Login.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Login_frame__M0KwY {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #3c3a3a;
+}
+.Login_frame__M0KwY .Login_titles__IWCJQ {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.Login_frame__M0KwY form {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.Login_frame__M0KwY form input {
+  height: 3rem;
+  padding: 0 1rem;
+  background: rgba(255, 255, 255, 0.31);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 0 0 rgb(255, 255, 255);
+}
+.Login_frame__M0KwY .Login_actions___ELIG {
+  width: 100%;
+  display: flex;
+}
+.Login_frame__M0KwY .Login_actions___ELIG button {
+  width: 8rem;
+  height: 2.4rem;
+  background-color: black;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./components/Modal.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Modal_section__nLFKA {
+  height: 80%;
+  width: 40%;
+  min-width: 25rem;
+  max-width: 30rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.31);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./app/[application_id]/page.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.page_loaderContainer__SAi3D {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  color: hsl(0, 0%, 100%);
+}
+.page_loaderContainer__SAi3D p:nth-child(1) {
+  animation: page_circle__gBbd3 2.8s linear infinite;
+}
+
+.page_header__45_92 {
+  height: 5rem;
+  position: absolute;
+  padding: 0 2rem;
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+}
+.page_header__45_92 h1 {
+  font-weight: 600;
+}
+
+.page_container__l_q7t {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes page_circle__gBbd3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
